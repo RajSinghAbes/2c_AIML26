@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration Form </title>
+</head>
+<body>
+    <h2> Registration Form </h2>
+    <form>
+        <label>Full Name:</label>
+        <input type ="Name" placeholder="Enter your name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+        <br><br>
+
+        <label>passward</label>
+        <input type="passward" placeholder="Enter your passward">
+        <br><br>
+
+        <label> re enter passward</label>
+        <input type="re enter passward" placeholder="Enter your re enter passward">
+        <br><br>
+
+        <label> mobile no</label>
+        <input type="mobile no " placeholder="Enter your mobile no ">
+        <br><br>
+         <input type="checkbox">
+         <br><br>
+
+         <input type="submit" value="submit">
+    </form>
+    <script>
+        function validate (){
+            var name = document.getElementById("name").value;
+            if(isNaN(name) == false){
+                alert("plese enter Full Name");
+                return false;
+
+            }
+            var Email = document.getElementByID("Email").value;
+             if(email.indexOf("@") == -1 ){
+                alert("plese enter a valid email address containing @ ans.");
+                return false;
+            }
+            var Passward  = document.getElementByID("Passward").value;
+             if(Pass.length < 6){
+                alert("passward must be at least 6 characters long.");
+                return false;
+            }
+            var repass = document.getElementByID("repass").value;
+             if(pass !=repass){
+                alert("passward do not match.");
+                return false;
+            }
+            var Mobile = document.getElementByID("Mobile").value;
+             if(isNaN(Mobile)|| Mobile.length !=10){
+                alert("mobile number must be exactly 10 digits.");
+                return false;
+            }
+            alert("Ragistration Successful");
+            return true;
+  
+        } 
+
+    </script>
+</body>
+</html>
