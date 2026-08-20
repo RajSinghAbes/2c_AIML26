@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object</title>
+
+    <script>
+    
+        let student = new Object();
+
+        student.name = "Raj";
+        student.id = "2020";
+        student.city = "Ghaziabad";
+
+        student.learning = function() {
+            console.log("Learning tech course");
+        };
+
+        student.subject = ["web", "dsa", "oops"];
+
+        console.log(student.name);
+        student.learning();
+
+        let student2 = {
+            name: "Raj",
+            id: "2020",
+            city: "Ghaziabad",
+
+            learning: function() {
+                console.log("Tech subject");
+            }
+        };
+
+        student2.pincode = 201009;
+
+        student2.yoga = function() {
+            console.log("Doing yoga");
+        };
+
+        console.log(student2.name);
+        student2.learning();
+        student2.yoga();
+    </script>
+</head>
+
+<body>
+</body>
+</html>
