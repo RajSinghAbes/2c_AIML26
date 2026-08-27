@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let product = {
+            p_id: 101,
+            p_name: "projector",
+            p_price: 2000,
+            p_quantity: 2,
+
+            t_cost : function(){
+                return this.price*this.quantity;
+            },
+            updateQuantity:function(q){
+                this.quantiy = q;
+            },
+            displayinfo: function(){
+                console.log("id:",this.product);
+                console.log("name:",this.productname);
+                console.log("price:",this.productprice);
+                console.log("quantity:",this.productquantity);
+            }
+
+        };
+
+        product. displayinfo();
+        product.updateQuantity(5);
+        console.log("After updating quantity:");
+        product.displayinfo();
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
