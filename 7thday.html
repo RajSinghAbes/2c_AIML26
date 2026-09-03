@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+
+function fullname(first, last) {
+    return `${first} ${last}`;
+}
+
+let first = "raj";
+let last = "singh";
+
+document.write("My name is " + first + " " + last);
+
+console.log(`My name is ${first} ${last}`);
+
+let name = hello`${fullname("raj", "singh")}`;
+
+console.log(name);
+//arrow function   
+fullname = (first,last) => {
+    return `${first} ${last}`;
+};
+console.log(fullname("raj","singh"));
+
+//rest operator
+function sum(...numbers ){
+    let total =0;
+    for(let number of numbers){
+        total = total+number;
+    }
+    console.log(total);
+
+}
+sum(10,20)
+sum(10,20,30)
+sum(10,20,30)
+function sum(...values){
+    console.log(values)
+}
+</script>
+
+</body>
+</html>
